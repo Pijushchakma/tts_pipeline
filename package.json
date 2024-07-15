@@ -1,0 +1,19 @@
+{
+  "name": "tts_pipeline",
+  "version": "0.0.1",
+  "description": "This is a pipeline for the tts audio transcription ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "streaming",
+    "tts",
+    "text_chunk"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^4.7.5"
+  }
+}
