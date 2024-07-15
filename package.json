@@ -6,11 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pijushchakma/tts_pipeline.git"
+  },
   "keywords": [
     "streaming",
     "tts",
     "text_chunk"
   ],
+  "bugs": {
+    "url": "https://github.com/Pijushchakma/tts_pipeline.git/issues"
+  },
+  "homepage": "https://github.com/Pijushchakma/tts_pipeline.git#readme",
   "author": "",
   "license": "ISC",
   "dependencies": {

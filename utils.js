@@ -1,11 +1,11 @@
 import io from "socket.io-client";
-
+let audioContext = new (window.AudioContext || window.webkitAudioContext)();
 let socket = null;
 let totalAudioNumber = 0;
 let audioQueue = [];
 let currentIndex = 0;
 let EventEmitter = null;
-let audioContext = null;
+
 let currentSource = null; // To keep track of the current audio source
 
 export const preProccessAndSend = async (
@@ -14,11 +14,10 @@ export const preProccessAndSend = async (
   gender,
   speakerId,
   socketUrl,
-  AudioContext,
+  audioContext,
   eventEmitter
 ) => {
   EventEmitter = eventEmitter;
-  audioContext = AudioContext;
   audioQueue = []
   totalAudioNumber = 0
   currentIndex = 0

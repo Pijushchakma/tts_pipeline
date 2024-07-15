@@ -10,7 +10,6 @@ export const playAudio = (
   textBoxRef,
   eventEmitter=null,
   socketUrl,
-  audioContext,
   model = "vits",
   gender = "male",
   speakerId = 0
@@ -23,7 +22,7 @@ export const playAudio = (
     } else speakerId = SPEAKERID[gender][0];
   }
   const inputText = textBoxRef.current.value;
-  preProccessAndSend(inputText, model, gender, speakerId, socketUrl, audioContext,eventEmitter);
+  preProccessAndSend(inputText, model, gender, speakerId, socketUrl,eventEmitter);
 };
 export { stopAudio };
 
